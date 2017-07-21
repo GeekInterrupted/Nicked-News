@@ -22,10 +22,6 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//db configuration with Mongoose
-mongoose.connect("mongodb://localhost/nickednews");
-var db = mongoose.connection;
-
 //set handlebars
 var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));

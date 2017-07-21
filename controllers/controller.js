@@ -133,22 +133,6 @@ router.post("/save/article/:id", function(req, res) {
 });  
 });
 
-
-//saved articles
-// router.get("/saved", function(req, res) {
-//TODO get the route to display saved articles
-// Article.find({"saved": true})
-// .exec(function(err, displaySaved) {
-//     console.log("saved articles: " + displaySaved)
-//     if (err) {
-//         console.log(err);
-//     }       
-// })
-// });
-   
-
-
-
 //render the articles
 router.get("/saved", function(req, res) {
     //mongo db results are displayed and sorted
@@ -164,16 +148,6 @@ router.get("/saved", function(req, res) {
             }
         });
 });
-
-
-
-
-
-
-
-
-
-
 
 //export the route for server
 module.exports = router;
