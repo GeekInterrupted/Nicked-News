@@ -27,19 +27,6 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-//===================================
-//Mongoose
-//if there are any errors with the mongoose connection ...
-//===================================
-db.on("error", function(err) {
-    console.log("Halt and Catch Fire: ", err);
-});
-
-//if the connection is successful...
-db.once("open", function() {
-    console.log("Yay! Connection successful");
-});
-
 
 //database configuration
 var databaseUrl = "scraper";
