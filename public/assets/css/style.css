@@ -1,0 +1,84 @@
+nav {
+    height: 70px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #000000;
+}
+
+collapsible-body,
+collapsible-header {
+    background-color: #ffffff;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: #b0bec5;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #b0bec5;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #b0bec5;
+    box-shadow: 0 1px 0 0 #b0bec5;
+}
+
+.input-field input[type=textarea]:focus {
+    border-bottom: 1px solid #b0bec5;
+    box-shadow: 0 1px 0 0 #b0bec5;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label,
+.materialize-textarea:focus:not([readonly])+label {
+    color: #b0bec5 !important;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus,
+.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #b0bec5 !important;
+    box-shadow: 0 1px 0 0 #b0bec5 !important;
+}
+
+custom-btn {
+    padding-right: 20px;
+    margin-right: 20px;
+}

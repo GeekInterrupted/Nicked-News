@@ -1,0 +1,46 @@
+
+{{> navbar}}
+
+    <!-- Page Content -->
+    <main> 
+
+      <!-- ticker tape -->
+      <div class="container">        
+        <img class="responsive-img" src="/assets/img/newspaperold.png">
+
+
+  <!-- Modal Structure -->
+  <div id="modal-instructions" class="modal">
+    <div class="modal-content">
+      
+           <ul class="collection with-header">
+          <li class="collection-header grey lighten-2"><h5>Welcome to Nicked News</h5></li>
+          <li class="collection-item"> - We scrape the internets for you because you can't be bothered</li>
+          <li class="collection-item"><div>Click <i class="material-icons">create</i> to add a comment.</div></li>
+          <li class="collection-item"><div>Click <i class="material-icons">note</i> to read comments.</div></li>
+          <li class="collection-item"><div>Click <i class="material-icons">delete</i> to delete comments.</div></li>
+        </ul>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>
+    </div>
+  </div>
+ 
+      </div>
+
+
+      <!-- render articles in the container -->
+      <div class="container">
+        {{{body}}}
+      </div>
+
+    </main>
+
+{{> footer}}
+<script type="text/javascript" src="assets/js/modal.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+    
+  </body>
+
+</html>

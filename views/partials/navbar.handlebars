@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nicked News</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="icon" href="assets/img/newspaper-bs.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+
+  </head>
+
+  <body>
+{{!-- navbar --}}
+  <div class = "container" height="100px">
+    <div class="navbar">
+      <nav>
+        <div class="nav-wrapper">  
+          <a href="/" class="brand-logo center"><img src="assets/img/newspaper-w.png" width="50px" height="50px" alt="Nicked News"></a>
+              
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/saved">Archives</a></li>
+        </ul>
+         <a class="waves-effect right custom-btn" href="#modal-instructions">Instructions&nbsp &nbsp</a>
+         <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        
+        </div>
+      </nav>
+    </div>
+  </div>
+{{!-- mobile navbar --}}
+<ul class="side-nav darken-3" id="mobile-demo">
+  <li><a href="https://news.js.org/" target="_blank">News JS</a></li>
+  <li><a href="https://github.com/geekinterrupted/nicked-news" target="_blank">Github Repo</a></li>
+</ul>
